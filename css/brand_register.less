@@ -1,0 +1,358 @@
+@ef-red: #c7131c; //#c7161c
+@ef-gray: #ddd; //#ddd;
+@ef-white: #fff; //#fff;
+/*通用样式*/
+body {
+  font: 12px "microsoft yahei", Arial, sans-serif;
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+
+ul, p, h1, h2, h3, h4, h5, h6, dl, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.lf {
+  float: left;
+}
+
+.rt {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+input {
+  border: 0;
+}
+
+/*top样式*/
+.top {
+  background-color: #EEEEEE;
+  height: 40px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+}
+
+.top:after {
+  clear: both;
+  content: '';
+}
+
+ul.login_left {
+  width: 100%;
+  float: left;
+  a:hover {
+    text-decoration: underline;
+    color: @ef-red;
+  }
+  a.login_left_underline:hover {
+    text-decoration: none;
+  }
+  b {
+    width: 22px;
+    height: 22px;
+    background: url(../image/datu.png)no-repeat -224px -480px;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 6px;
+  }
+  li.weima {
+    display: block;
+    position: relative;
+    &:hover {
+      img {
+        display: block;
+      }
+    }
+  }
+  img {
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    display: none;
+  }
+  b.weibo {
+    background-position: -225px -514px;
+  }
+  li {
+    height: 40px;
+    line-height: 30px;
+    float: left;
+    padding: 5px 10px;
+    color: #565656;
+    font-size: 13px;
+  }
+}
+
+ul.login_right {
+  width: 100%;
+  float: right;
+  li a {
+    width: 68px;
+    float: right;
+    height: 40px;
+    line-height: 30px;
+    padding: 5px 0px;
+    color: #565656;
+    font-size: 13px;
+    text-align: center;
+  }
+  li a:hover {
+    background: @ef-red;
+    color: @ef-white;
+    text-decoration: none;
+  }
+}
+
+/*nav样式设置*/
+.logo {
+  margin: 0 auto;
+  min-height: 80px;
+  border-top: 1px solid @ef-white;
+  margin-top: 70px;
+}
+
+/* 头部杭州州市样式 */
+.container_hzs {
+  padding: 20px 0 0 18px;;
+  width: 110px;
+  float: left;
+  height: 40px;
+  span {
+    font-size: 20px;
+    color: @ef-red;
+  }
+  b {
+    width: 18px;
+    height: 14px;
+    background: url(../image/datu.png)no-repeat -283px -26px;
+    display: inline-block;
+  }
+}
+
+/* 头部联系电话样式 */
+.container_right {
+  float: right;
+  display: inline-block;
+  span {
+    font-size: 24px;
+    color: @ef-red;
+  }
+  b {
+    width: 36px;
+    height: 40px;
+    background: url(../image/datu.png)no-repeat -316px 0px;
+    display: inline-block;
+  }
+}
+
+/*导航条菜单样式设计*/
+.menu_title {
+  background: @ef-red;
+  color: @ef-white;
+  width: 180px;
+  line-height: 40px;
+  padding-left: 20px;
+  font-size: 18px;
+  float: left;
+  a {
+    color: @ef-white;
+  }
+}
+.nav{
+  border-bottom:2px solid @ef-red;
+}
+.nav_con {
+  margin-left: 20px;
+  float: left;
+  ul li {
+    float: left;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    .nav_con ul li.menu-target a {
+      background: @ef-red;
+      color: @ef-white;
+    }
+    a {
+      height: 40px;
+      display: inline-block;
+      padding: 0 25px 0 35px;
+      transition: all 0.3s linear;
+      &:hover {
+        background: @ef-red;
+        color: @ef-white;
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  min-height: 480px;
+  background: #eeeeee;
+  margin-top: 100px;
+  border-top: 1px solid transparent;
+}
+
+.footer_top {
+  border-bottom: 1px solid @ef-gray;
+  ul {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  li {
+    width: 180px;
+    height: 120px;
+    float: left;
+    text-align: center;
+    p {
+      font-size: 50px;
+      color: #999999;
+      b {
+        font-size: 18px;
+        padding-left: 10px;
+      }
+    }
+    span {
+      font-size: 18px;
+      color: #9F9F9F;
+    }
+  }
+
+}
+/* 底部下面样式 */
+.footer_bottom a:hover {
+  color: @ef-red;
+}
+
+ul.footer_bottom_box {
+  margin-top: 10px;
+  height: 120px;
+  li {
+    width: 165px;
+    height: 115px;
+    float: left;
+    padding: 0px 16px 0px 16px;
+    border-left: 2px solid @ef-gray;
+    .w256 {
+      width: 256px;
+      border-right: 2px solid @ef-gray;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+    b {
+      display: block;
+      font-size: 13px;
+      span {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        background: url(../image/datu.png)no-repeat -220px -706px;
+
+      }
+      span.qq {
+        background: url(../image/datu.png)no-repeat -220px -740px;
+      }
+    }
+  }
+}
+
+// 底部下面样式友情链接样式
+.youqinglianjie {
+  font-size: 16px;
+  margin-top: 20px;
+  border-bottom: 2px solid @ef-gray;
+  padding-bottom: 20px;
+  a {
+    margin-left: 8px;
+  }
+
+}
+
+// 底部最最下面的样式
+.footer_bottom_bottom {
+  font-size: 14px;
+  text-align: center;
+}
+//main1样式
+.main{
+  background:url(../image/bannerbg.jpg)no-repeat;
+  height:700px;
+}
+.mcenter{
+  margin:80px auto 0;
+}
+.trademark-search{
+  background: rgba(0,0,0,0.2);
+  //padding: 40px 27px 27px 95px;
+  margin:0 auto;
+  width:100%;
+  text-align:center;
+h3{
+  font-weight: bold;
+  color:@ef-red;
+  text-align:center;
+  margin-bottom:10px;
+}
+}
+.form-con{
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+  input{
+    height: 60px;
+    border: none;
+    width: 545px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  button{
+    height: 60px;
+    width: 142px;
+    position: absolute;
+    background: #c7161c;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    font-size: 22px;
+  }
+}
